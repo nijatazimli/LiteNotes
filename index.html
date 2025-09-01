@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LiteNotes Pro</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- React libraries -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Babel for JSX transpilation -->
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
+  <!-- React will render into this -->
   <div id="root"></div>
-  <script type="text/babel" src="app.js"></script>
+
+  <!-- Your app code, compiled in-browser by Babel -->
+  <script type="text/babel" data-presets="react" src="app.js"></script>
 </body>
 </html>
